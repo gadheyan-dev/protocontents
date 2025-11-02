@@ -100,6 +100,31 @@ Tests are located in `/tests/e2e` and cover:
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run test:e2e` - Run Playwright tests
+- `npm run deploy` - Build and deploy to GitHub Pages (manual)
+
+## 🚀 Deployment
+
+### GitHub Pages (Automatic)
+
+The site is automatically deployed to GitHub Pages via GitHub Actions when you push to the `main` branch. The deployment happens automatically at:
+`https://gadheyan-dev.github.io/protocontents/`
+
+### Manual Deployment
+
+If you want to deploy manually:
+
+```bash
+npm run deploy
+```
+
+This will build the site and push it to the `gh-pages` branch.
+
+### Enable GitHub Pages
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under **Source**, select **GitHub Actions**
+4. The workflow will automatically deploy when you push to main
 
 ## 🌐 Browser Support
 
